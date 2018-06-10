@@ -1,9 +1,61 @@
-<div>
+<style type="text/css" media="screen">
 
-	<img src="./app/imgs/bg.jpg" style="width: 100%;height: 500px;"/>
+	.body{
+		position: relative;
+		display: flex;
+		/*background-image: url(app/imgs/bg.jpeg);*/
+		/*background-image: url('app/imgs/bg.jpeg/');*/
+		margin：0 auto;
+     	
 
+	}
+	.body img{
+		position: relative;
+		z-index: 1;
+		margin：0 auto;
+	}
+	.body button {
+		position: fixed;
+		z-index: 2;
+	}
+	.home-title{
+		position: fixed;
+		z-index: 2;
+		
+		/*opacity: 0.3;  */
+		background-color: rgba(0,0,0,0.3);
+		/* IE9、标准浏览器、IE6和部分IE7内核的浏览器(如QQ浏览器)会读懂 */
+		text-align: center;/*水平居中*/
+		line-height:70px; /*垂直居中*/
+	}
+	.fixed-center{
+		position:fixed;
+		margin:auto;
+		left:0; 
+		right:0;
+		top:0; 
+		bottom:0;
+		width:auto;
+		height:70px;
+		}
+	
+	
+</style>
 
+<div class="body">
+	 <!-- <button class="btn btn-primary">GO!</button>  -->
+	
+	 <div class="h1 fixed-center home-title">  
+	 <font style="color:#ffffff">THIS IS MY SPACE</font>
 
+	</div>
+	
+	
+	<!-- <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1528650093440&di=f43765f65a183a5779f67116ceba2e9e&imgtype=0&src=http%3A%2F%2Fup.enterdesk.com%2Fedpic_source%2Fa2%2F7a%2F95%2Fa27a957696c16e93f6a75540abef0a8b.jpg" style="width: 100%;height: 800px;"  /> -->
+	<img src="app/imgs/bg.jpeg" style="width: 100%;height: 800px;">
+	
+</div>
 
-
+<div class="info-card">
+   
 </div>

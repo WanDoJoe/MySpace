@@ -1,6 +1,11 @@
 
-body{
-float
+.index-body{
+ /*  建立弹性框 */
+      display: -webkit-flex;
+      -webkit-flex-direction: row;
+
+      display: flex;
+      flex-direction: row;
 }
 
 .wrapper {

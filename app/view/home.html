@@ -3,26 +3,13 @@
 	.body{
 		position: relative;
 		display: flex;
-		/*background-image: url('app/imgs/bg.jpeg');*/
-		/*background: url("http://localhost:63342/MySpace/app/imgs/bg.jpeg?_ijt=o98n7atdroabv6qptbs6mst1if");*/
-		margin：0 :auto;
-
+		/*background-image: url(app/imgs/bg.jpeg);*/
+		/*background-image: url('app/imgs/bg.jpeg/');*/
+		margin：0 auto;
+     	
 
 	}
-	.body img{
-		position: relative;
-		z-index: 1;
-		margin：0 :auto;
-
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-	}
-	.body button {
-		position: fixed;
-		z-index: 2;
-	}
+	
 	.home-title{
 		position: fixed;
 		z-index: 2;
@@ -34,33 +21,54 @@
 		line-height:70px; /*垂直居中*/
 	}
 	.fixed-center{
-		position:fixed;
+		position:relative;
 		margin:auto;
-		left:0;
+		left:0; 
 		right:0;
-		top:0;
+		top:0; 
 		bottom:0;
 		width:auto;
 		height:70px;
+		margin-top: -70px;
 		}
+	.fixed-center font{
+		color:#fff;
+		font-size: 36px;
+		
+	}
 	
-	
+
+	.banner-container{ width: 100%;
+    position: relative;
+    padding: 0px;
+    box-shadow: 0px 0px 1px rgba(0,0,0,0.3);
+    /*background: url("../images/banner-bg.jpg") no-repeat;*/
+    background-size: 100% 100%;
+    background-size: cover;
+    margin-top: 60px;
+    position: relative;}
+
+    .banner-container img {
+        width: 100%;
+        /*height: 650px;*/
+    }
+
+    .banner-content {
+    position: absolute;
+    z-index: 3;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+     
 </style>
 
-<div class="body">
+<div class="banner-container">
 	 <!-- <button class="btn btn-primary">GO!</button>  -->
-
-	 <div class="h1 fixed-center home-title">
-	 <font style="color:#ffffff">THIS IS MY SPACE</font>
-
+	<img src="app/imgs/homebg.jpg" alt="">
+	<div class="home-title fixed-center">
+		<font  > THIS IS MY SPACE</font>
 	</div>
-	
-	
-	<!-- <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1528650093440&di=f43765f65a183a5779f67116ceba2e9e&imgtype=0&src=http%3A%2F%2Fup.enterdesk.com%2Fedpic_source%2Fa2%2F7a%2F95%2Fa27a957696c16e93f6a75540abef0a8b.jpg" style="width: 100%;height: 800px;"  /> -->
-	<img src="app/imgs/bg.jpeg" style="width: 100%;height: 570px;">
-	
 </div>
 
-<div class="info-card">
-   
-</div>

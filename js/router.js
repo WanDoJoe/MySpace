@@ -34,6 +34,11 @@ app.config(['$stateProvider', '$locationProvider', '$urlRouterProvider',
 				templateUrl:"app/view/photo.html"//helpBase.baseUrl("home.html")
 			})
 
+			//about router
+            .state("app.aboutme",{
+                url:"/aboutme",
+                templateUrl:"app/view/aboutme.html"//helpBase.baseUrl("home.html")
+            })
 
 
 			;

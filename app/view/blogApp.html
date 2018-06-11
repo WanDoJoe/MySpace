@@ -1,15 +1,23 @@
-
+<style>
+	.blog-topnav{
+		position: relative;
+	}
+	.blog-sidemenu{
+		position: absolute;
+		margin-top: 20px;
+	}
+	.blog-contenter{
+		position: absolute;
+		margin-top: 60px;
+	}
+</style>
 <header ng-include="'app/view/componter/top-narbar.html'" ></header>
 
-<aside >
-		<div ng-include="'app/view/componter/blogSideMenu.html'" scope="" onload="">
-			
-		</div>
+<aside ng-include="'app/view/componter/blogSideMenu.html'" class="blog-sidemenu">
 </aside>
 
 <section >
    <!-- Page content-->
-   <div ui-view="" 
-	style="margin-top: 60px;"
+   <div ui-view="" class="blog-contenter"
 ></div>
 </section>

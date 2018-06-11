@@ -7,3 +7,12 @@ app.controller('indexController', ['$scope','routerTempUrlHelpProvider', functio
 	
 }])
 
+
+
+
+app.constructor("blogController",['$rootScope','$scope','$http',function ($rootScope, $scope,$http) {
+
+
+
+
+}])

@@ -21,6 +21,7 @@ app.config(['$stateProvider', '$locationProvider', '$urlRouterProvider',
 			//blog router 
 			.state("app.blogapp",{ //app
 				url:"/blogapp",
+                // abstract:true,
 				templateUrl:"app/view/blogApp.html"//helpBase.baseUrl("home.html")
 			})
 			.state("app.bloghome",{ //app

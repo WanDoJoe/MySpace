@@ -19,12 +19,12 @@ app.config(['$stateProvider', '$locationProvider', '$urlRouterProvider',
 				templateUrl:"app/view/home.html"//helpBase.baseUrl("home.html")
 			})
 			//blog router 
-			.state("app.blogapp",{ //app
+			.state("blog",{ //app
 				url:"/blogapp",
                 // abstract:true,
 				templateUrl:"app/view/blogApp.html"//helpBase.baseUrl("home.html")
 			})
-			.state("app.bloghome",{ //app
+			.state("blog.home",{ //app
 				url:"/blog",
 				templateUrl:"app/view/blog.html"//helpBase.baseUrl("home.html")
 			})

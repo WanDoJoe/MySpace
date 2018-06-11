@@ -3,21 +3,25 @@
 		position: relative;
 	}
 	.blog-sidemenu{
-		position: absolute;
-		margin-top: 20px;
+		position: relative;
+		margin-top: 80px;
+        width: 160px;
+        left: 0;
+        border-right: #c5c5c5 solid 1px;
+         background: #9acfea;
 	}
 	.blog-contenter{
-		position: absolute;
+		position: relative;
 		margin-top: 60px;
+       background: #faf2cc;
 	}
 </style>
 <header ng-include="'app/view/componter/top-narbar.html'" ></header>
 
-<aside ng-include="'app/view/componter/blogSideMenu.html'" class="blog-sidemenu">
+<aside ng-include="'app/view/componter/blogSideMenu.html'" class="blog-sidemenu h3">
 </aside>
 
 <section >
    <!-- Page content-->
-   <div ui-view="" class="blog-contenter"
-></div>
+   <div ui-view="" class="blog-contenter"></div>
 </section>

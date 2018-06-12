@@ -1,3 +1,21 @@
+/*响应式布局*/
+@media screen and (max-width:600px){
+    .appindex{
+        /*background:red;*/
+    }
+}
+@media screen and (min-width:600px) and (max-width:800px){
+    .appindex{
+        /*background:blue;*/
+    }
+}
+@media screen and (min-width:800px){
+    .appindex{
+        /*background:green;*/
+    }
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +26,8 @@ body {
     font-size: 14px;
     font-family: 'Source Sans Pro', sans-serif;
     -webkit-font-smoothing: antialiased;
-    background: #E4E4E4;
+    /*background: #E4E4E4;*/
+    background:white;
 }
 
 .appindex{
@@ -31,7 +50,7 @@ body {
     height: 30px;
     width: 100%;
     
-    margin-bottom: 0px: 
+    margin-bottom: 0px;
     background: #fff;
     border-top: #acacac solid 1px;
     text-align: center;

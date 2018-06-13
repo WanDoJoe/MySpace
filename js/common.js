@@ -7,7 +7,8 @@
 var app =angular.module('myspace', [
 	'ngRoute',
 	'ngAnimate',
-	'ui.router'
+	'ui.router',
+	"oc.lazyLoad"
 	]);
 
 // app.run(["$rootScope"],function ($rootScope) {

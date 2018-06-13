@@ -31,6 +31,11 @@ body {
     /*background:white;*/
 }
 
+a:link    {color:#909090;}
+  a:visited {color:#909090;}
+  a:hover   {color:black;}
+  a:active  {color:black;}
+
 .appindex{
   margin: 0px;width: 100%;
   position: relative;

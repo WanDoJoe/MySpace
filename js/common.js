@@ -10,11 +10,11 @@ var app =angular.module('myspace', [
 	'ui.router'
 	]);
 
-app.run(["$rootScope"],function ($rootScope) {
-    $rootScope.app ={
-        viewAnimation: 'ng-fadeInUp'
-	}
-})
+// app.run(["$rootScope"],function ($rootScope) {
+//     $rootScope.app ={
+//         viewAnimation: 'ng-fadeInUp'
+// 	}
+// });
 
 
 //router url handle

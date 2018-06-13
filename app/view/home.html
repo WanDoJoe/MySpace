@@ -1,12 +1,9 @@
 <style type="text/css" media="screen">
 
-	.body{
-		position: relative;
-		display: flex;
-		/*background-image: url(app/imgs/bg.jpeg);*/
-		/*background-image: url('app/imgs/bg.jpeg/');*/
-		margin：0 auto;
-     	
+	.wrap{
+		background: white;
+		margin: 0 auto;
+		width: 100%;
 
 	}
 	
@@ -31,14 +28,15 @@
 		height:70px;
 		margin-top: -70px;
 		}
-	.fixed-center font{
+	.fixed-center span{
 		color:#fff;
 		font-size: 36px;
 		
 	}
 	
 
-	.banner-container{ width: 100%;
+	.banner-container{
+		width: 100%;
     position: relative;
     padding: 0px;
     box-shadow: 0px 0px 1px rgba(0,0,0,0.3);
@@ -46,7 +44,9 @@
     background-size: 100% 100%;
     background-size: cover;
     margin-top: 60px;
-    position: relative;}
+    position: relative;
+
+	}
 
     .banner-container img {
         width: 100%;
@@ -64,11 +64,17 @@
      
 </style>
 
-<div class="banner-container">
+<div class="wrap" >
 	 <!-- <button class="btn btn-primary">GO!</button>  -->
+	<div>
 	<img src="app/imgs/homebg.jpg" alt="">
 	<div class="home-title fixed-center">
-		<font  > THIS IS MY SPACE</font>
+		<span  > THIS IS MY SPACE</span>
 	</div>
+	</div>
+	<div class="home-title fixed-center">
+		<span  > THIS IS MY SPACE</span>
+	</div>
+
 </div>
 

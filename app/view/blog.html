@@ -7,7 +7,7 @@
 	}
 	.header_view{
 		/*margin:20px;*/
-		height:1px;
+		/*height:1px;*/
 		/*border:solid 1px #0000FF;*/
 	}
 	.container{
@@ -30,7 +30,7 @@
 		padding:10px;
 	}
 	.contern-border{
-		/*border: solid 1px #acacac;;*/
+		border-bottom: solid 1px #ececec;
 	}
 	.right_side{
 		position:absolute;
@@ -51,6 +51,7 @@
 		position: relative;
 		height: 200px;
 		margin-top: 20px;
+		margin-bottom: 50px;
 		left: 0;
 		/*border-bottom:solid 1px #E5E5E5;*/
 
@@ -86,7 +87,14 @@
 		overflow: hidden;
 		height: 80px;
 		color:#959595;
+		margin-top: 10px;
 		/*border:1px #ff8000 dashed;*/
+	}
+	.blog-item-content-img{
+		width: 200px;
+		height: 150px;
+		margin-right: 10px;
+
 	}
 	.blog-item-ReadMe{
 		position: absolute;
@@ -94,23 +102,45 @@
 		right: 10px;
 	}
 
+	/*blog-item-content>a:hover{*/
+		/*color: black;*/
+	/*}*/
+	a:link    {color:#909090;}
+	a:visited {color:#909090;}
+	a:hover   {color:black;}
+	a:active  {color:black;}
 </style>
 
-<div class="wrap ">
+<div class="wrap">
 	<div class="header_view"></div>
-	<div class="left_side col-md-2"></div>
+	<div class="left_side col-md-2" >
 
-	<div class="content container col-md-8"  >
+		<button class="btn btn-default"
+				style="width:90px;background:#fff;border: solid 1px #cdcdcd;font-size: 12px;padding: 5px;margin-top: 20px">
+			写日记
+		</button>
+
+	</div>
+
+	<div class="content container col-md-8" style="background: white" >
+
 		<div class="blog-item contern-border">
 			<div style="padding-left: 10px">
-				<div class="h3">
-					帝国cms 列表页调用子栏目，没有则不显示栏目名称
-				</div>
+
 				<div class="blog-item-content">
-					<div style="float:left;" ng-if="true">
-						<img src="app/imgs/portfolio-3.jpg" style="height: 110px;width: 200px;margin-right: 10px">
-					</div>	
+					<div style="float:left;" ng-if="false">
+						<img src="app/imgs/portfolio-3.jpg"class="blog-item-content-img">
+					</div>
+
 					<div style="left: 10px;">
+						<div class="blog-title h4">
+							<a href="#" style="text-decoration: none;">
+								帝国cms 列表页调用子栏目，没有则不显示栏目名称
+							</a>
+						</div>
+						<div class="">
+							<span style="color: #959595">发布日期：2018-06-11</span>
+						</div>
 						<p >
 							使用帝国cms要在列表页调用该栏目下的子栏目，比如我网站上的“博客日记”，该栏目下面没有子栏目，如果我使用这一句调用，那么就会出现“模板分享，学无止境，慢生活”等所有跟它同级的栏目。
 							使用帝国cms要在列表页调用该栏目下的子栏目，比如我网站上的“博客日记”，该栏目下面没有子栏目，如果我使用这一句调用，那么就会出现“模板分享，学无止境，慢生活”等所有跟它同级的栏目。
@@ -119,25 +149,32 @@
 
 					</div>
 				</div>
-				<div class="blog-item-auth">
-					2018-06-11
-				</div>
+
 				<div class="blog-item-ReadMe">
-					<a style="text-decoration: none">ReadMe>></a>
+					<!--<a style="text-decoration: none;border: solid 1px #cdcdcd;font-size: 12px;padding: 5px">阅读正文</a>-->
+					<button class="btn" style="background:#fff;border: solid 1px #cdcdcd;font-size: 12px;padding: 5px">阅读正文</button>
 				</div>
 			</div>
 		</div>
 
+
 		<div class="blog-item contern-border">
 			<div style="padding-left: 10px">
-				<div class="h3">
-					帝国cms 列表页调用子栏目，没有则不显示栏目名称
-				</div>
+
 				<div class="blog-item-content">
-					<div style="float:left;" ng-if="true">
-						<img src="app/imgs/portfolio-3.jpg" style="height: 110px;width: 200px;margin-right: 10px">
+					<div style="float:left;" ng-if="false">
+						<img src="app/imgs/portfolio-3.jpg"class="blog-item-content-img">
 					</div>
+
 					<div style="left: 10px;">
+						<div class="blog-title h4">
+							<a href="#" style="text-decoration: none;">
+								帝国cms 列表页调用子栏目，没有则不显示栏目名称
+							</a>
+						</div>
+						<div class="">
+							<span style="color: #959595">发布日期：2018-06-11</span>
+						</div>
 						<p >
 							使用帝国cms要在列表页调用该栏目下的子栏目，比如我网站上的“博客日记”，该栏目下面没有子栏目，如果我使用这一句调用，那么就会出现“模板分享，学无止境，慢生活”等所有跟它同级的栏目。
 							使用帝国cms要在列表页调用该栏目下的子栏目，比如我网站上的“博客日记”，该栏目下面没有子栏目，如果我使用这一句调用，那么就会出现“模板分享，学无止境，慢生活”等所有跟它同级的栏目。
@@ -146,24 +183,31 @@
 
 					</div>
 				</div>
-				<div class="blog-item-auth">
-					2018-06-11
-				</div>
+
 				<div class="blog-item-ReadMe">
-					<a style="text-decoration: none">ReadMe>></a>
+					<!--<a style="text-decoration: none;border: solid 1px #cdcdcd;font-size: 12px;padding: 5px">阅读正文</a>-->
+					<button class="btn" style="background:#fff;border: solid 1px #cdcdcd;font-size: 12px;padding: 5px">阅读正文</button>
 				</div>
 			</div>
 		</div>
+
 		<div class="blog-item contern-border">
 			<div style="padding-left: 10px">
-				<div class="h3">
-					帝国cms 列表页调用子栏目，没有则不显示栏目名称
-				</div>
+
 				<div class="blog-item-content">
-					<div style="float:left;" ng-if="true">
-						<img src="app/imgs/portfolio-3.jpg" style="height: 110px;width: 200px;margin-right: 10px">
+					<div style="float:left;" ng-if="false">
+						<img src="app/imgs/portfolio-3.jpg"class="blog-item-content-img">
 					</div>
+
 					<div style="left: 10px;">
+						<div class="blog-title h4">
+							<a href="#" style="text-decoration: none;">
+								帝国cms 列表页调用子栏目，没有则不显示栏目名称
+							</a>
+						</div>
+						<div class="">
+							<span style="color: #959595">发布日期：2018-06-11</span>
+						</div>
 						<p >
 							使用帝国cms要在列表页调用该栏目下的子栏目，比如我网站上的“博客日记”，该栏目下面没有子栏目，如果我使用这一句调用，那么就会出现“模板分享，学无止境，慢生活”等所有跟它同级的栏目。
 							使用帝国cms要在列表页调用该栏目下的子栏目，比如我网站上的“博客日记”，该栏目下面没有子栏目，如果我使用这一句调用，那么就会出现“模板分享，学无止境，慢生活”等所有跟它同级的栏目。
@@ -172,24 +216,31 @@
 
 					</div>
 				</div>
-				<div class="blog-item-auth">
-					2018-06-11
-				</div>
+
 				<div class="blog-item-ReadMe">
-					<a style="text-decoration: none">ReadMe>></a>
+					<!--<a style="text-decoration: none;border: solid 1px #cdcdcd;font-size: 12px;padding: 5px">阅读正文</a>-->
+					<button class="btn" style="background:#fff;border: solid 1px #cdcdcd;font-size: 12px;padding: 5px">阅读正文</button>
 				</div>
 			</div>
 		</div>
+
 		<div class="blog-item contern-border">
 			<div style="padding-left: 10px">
-				<div class="h3">
-					帝国cms 列表页调用子栏目，没有则不显示栏目名称
-				</div>
+
 				<div class="blog-item-content">
-					<div style="float:left;" ng-if="true">
-						<img src="app/imgs/portfolio-3.jpg" style="height: 110px;width: 200px;margin-right: 10px">
+					<div style="float:left;" ng-if="false">
+						<img src="app/imgs/portfolio-3.jpg"class="blog-item-content-img">
 					</div>
+
 					<div style="left: 10px;">
+						<div class="blog-title h4">
+							<a href="#" style="text-decoration: none;">
+								帝国cms 列表页调用子栏目，没有则不显示栏目名称
+							</a>
+						</div>
+						<div class="">
+							<span style="color: #959595">发布日期：2018-06-11</span>
+						</div>
 						<p >
 							使用帝国cms要在列表页调用该栏目下的子栏目，比如我网站上的“博客日记”，该栏目下面没有子栏目，如果我使用这一句调用，那么就会出现“模板分享，学无止境，慢生活”等所有跟它同级的栏目。
 							使用帝国cms要在列表页调用该栏目下的子栏目，比如我网站上的“博客日记”，该栏目下面没有子栏目，如果我使用这一句调用，那么就会出现“模板分享，学无止境，慢生活”等所有跟它同级的栏目。
@@ -198,24 +249,31 @@
 
 					</div>
 				</div>
-				<div class="blog-item-auth">
-					2018-06-11
-				</div>
+
 				<div class="blog-item-ReadMe">
-					<a style="text-decoration: none">ReadMe>></a>
+					<!--<a style="text-decoration: none;border: solid 1px #cdcdcd;font-size: 12px;padding: 5px">阅读正文</a>-->
+					<button class="btn" style="background:#fff;border: solid 1px #cdcdcd;font-size: 12px;padding: 5px">阅读正文</button>
 				</div>
 			</div>
 		</div>
+
 		<div class="blog-item contern-border">
 			<div style="padding-left: 10px">
-				<div class="h3">
-					帝国cms 列表页调用子栏目，没有则不显示栏目名称
-				</div>
+
 				<div class="blog-item-content">
-					<div style="float:left;" ng-if="true">
-						<img src="app/imgs/portfolio-3.jpg" style="height: 110px;width: 200px;margin-right: 10px">
+					<div style="float:left;" ng-if="false">
+						<img src="app/imgs/portfolio-3.jpg"class="blog-item-content-img">
 					</div>
+
 					<div style="left: 10px;">
+						<div class="blog-title h4">
+							<a href="#" style="text-decoration: none;">
+								帝国cms 列表页调用子栏目，没有则不显示栏目名称
+							</a>
+						</div>
+						<div class="">
+							<span style="color: #959595">发布日期：2018-06-11</span>
+						</div>
 						<p >
 							使用帝国cms要在列表页调用该栏目下的子栏目，比如我网站上的“博客日记”，该栏目下面没有子栏目，如果我使用这一句调用，那么就会出现“模板分享，学无止境，慢生活”等所有跟它同级的栏目。
 							使用帝国cms要在列表页调用该栏目下的子栏目，比如我网站上的“博客日记”，该栏目下面没有子栏目，如果我使用这一句调用，那么就会出现“模板分享，学无止境，慢生活”等所有跟它同级的栏目。
@@ -224,24 +282,31 @@
 
 					</div>
 				</div>
-				<div class="blog-item-auth">
-					2018-06-11
-				</div>
+
 				<div class="blog-item-ReadMe">
-					<a style="text-decoration: none">ReadMe>></a>
+					<!--<a style="text-decoration: none;border: solid 1px #cdcdcd;font-size: 12px;padding: 5px">阅读正文</a>-->
+					<button class="btn" style="background:#fff;border: solid 1px #cdcdcd;font-size: 12px;padding: 5px">阅读正文</button>
 				</div>
 			</div>
 		</div>
+
 		<div class="blog-item contern-border">
 			<div style="padding-left: 10px">
-				<div class="h3">
-					帝国cms 列表页调用子栏目，没有则不显示栏目名称
-				</div>
+
 				<div class="blog-item-content">
-					<div style="float:left;" ng-if="true">
-						<img src="app/imgs/portfolio-3.jpg" style="height: 110px;width: 200px;margin-right: 10px">
+					<div style="float:left;" ng-if="false">
+						<img src="app/imgs/portfolio-3.jpg"class="blog-item-content-img">
 					</div>
+
 					<div style="left: 10px;">
+						<div class="blog-title h4">
+							<a href="#" style="text-decoration: none;">
+								帝国cms 列表页调用子栏目，没有则不显示栏目名称
+							</a>
+						</div>
+						<div class="">
+							<span style="color: #959595">发布日期：2018-06-11</span>
+						</div>
 						<p >
 							使用帝国cms要在列表页调用该栏目下的子栏目，比如我网站上的“博客日记”，该栏目下面没有子栏目，如果我使用这一句调用，那么就会出现“模板分享，学无止境，慢生活”等所有跟它同级的栏目。
 							使用帝国cms要在列表页调用该栏目下的子栏目，比如我网站上的“博客日记”，该栏目下面没有子栏目，如果我使用这一句调用，那么就会出现“模板分享，学无止境，慢生活”等所有跟它同级的栏目。
@@ -250,16 +315,13 @@
 
 					</div>
 				</div>
-				<div class="blog-item-auth">
-					2018-06-11
-				</div>
+
 				<div class="blog-item-ReadMe">
-					<a style="text-decoration: none">ReadMe>></a>
+					<!--<a style="text-decoration: none;border: solid 1px #cdcdcd;font-size: 12px;padding: 5px">阅读正文</a>-->
+					<button class="btn" style="background:#fff;border: solid 1px #cdcdcd;font-size: 12px;padding: 5px">阅读正文</button>
 				</div>
 			</div>
 		</div>
-
-
 
 
 	</div>

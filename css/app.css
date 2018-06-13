@@ -26,8 +26,9 @@ body {
     font-size: 14px;
     font-family: 'Source Sans Pro', sans-serif;
     -webkit-font-smoothing: antialiased;
-    /*background: #E4E4E4;*/
-    background:white;
+    background: #E4E4E4;
+    /*background: url("../app/imgs/homebg.jpg");*/
+    /*background:white;*/
 }
 
 .appindex{

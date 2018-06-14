@@ -1,26 +1,26 @@
 
 <style>
+	.wrapper{
+		/*display: table;*/
+		  /*position:relative;*/
+	}
+
 	.photo-body{
 		background:white;
 		padding-top: 40px;
 		padding-bottom: 40px;
 
-		width: 100%;
-		height: 100%;
-
-		display: -webkit-box;
-		-webkit-box-pack:center;
-		-webkit-box-align:center;
-		-webkit-box-orient: vertical;
-		text-align: center
+		display: flex;
+    	text-align: center;
 	}
+	
 	.photo-content{
 
 	}
 
 </style>
 
-<div ng-controller="photoController" class="">
+<div ng-controller="photoController" class="wrapper">
 		<div class="photo-body"  id="viewer">
 			<div>
 				<img src="app/imgs/portfolio-3.jpg"

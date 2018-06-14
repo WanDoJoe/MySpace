@@ -108,13 +108,15 @@
 	
 </style>
 
-<div class="wrap" ng-controller="blogeditorController">
+<div class="wrap">
 	<div class="header_view"></div>
 	<div class="left_side col-md-2" >
 
 		<button class="btn btn-default"
 				style="width:90px;background:#fff;border: solid 1px #cdcdcd;font-size: 12px;padding: 5px;margin-top: 20px"
-				 data-toggle="modal" data-target="#myModal">
+                ui-sref="blog.editor"
+				>
+            <!--data-toggle="modal" data-target="#myModal"-->
 			写日记
 		</button>
 
@@ -168,31 +170,33 @@
 
 <!-- 模态框（Modal） -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form>
 
-        	<form>
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                &times;</button>
-				
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;</button>
 
-                <h4 class="modal-title" id="myModalLabel">
-                	<label>Title:<input type="text" ></label>
-                </h4>
-            </div>
-            <div class="modal-body" >
-				
-				<!-- <textarea name="" style="width: 100%;"></textarea> -->
-				<!-- <div id="blog_ckeditor" class="blog_ckeditor" scope="" onload=""></div> -->
-<textarea id="TextArea1" cols="20" rows="2"  style="width: 100%" class="ckeditor"></textarea>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                <button type="button" class="btn btn-primary">提交更改</button>
-            </div>
-			</form>
 
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal -->
+                    <h4 class="modal-title" id="myModalLabel">
+                        <label>Title:<input type="text" ></label>
+                    </h4>
+                </div>
+                <div class="modal-body" >
+
+                    <!-- <textarea name="" style="width: 100%;"></textarea> -->
+                    <!-- <div id="blog_ckeditor" class="blog_ckeditor" scope="" onload=""></div> -->
+                        <textarea id="TextArea1" cols="20" rows="2"  style="width: 100%" class="ckeditor"></textarea>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary">提交更改</button>
+                </div>
+
+            </div><!-- /.modal-content -->
+
+           </form>
+
+        </div><!-- /.modal -->
+    </div>
 </div>
-

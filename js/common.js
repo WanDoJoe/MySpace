@@ -17,6 +17,13 @@ var app =angular.module('myspace', [
 // 	}
 // });
 
+app.constant("APP_JSCRIPTS",{
+	script:{
+		"viewerjs":['app/libs/viewerjs/dist/viewer.min.css','app/libs/viewerjs/dist/viewer.min.js']
+	}
+})
+
+
 
 //router url handle
 app.provider('routerTempUrlHelpProvider', [function () {

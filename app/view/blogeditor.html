@@ -1,0 +1,21 @@
+
+
+
+
+<div  ng-controller="blogeditorController" style="background: #e5e5e5;background: white; ">
+
+    <!--<textarea ckeditor ng-model="entity.catalog" tyle="width: 100%;" class="form-control"></textarea>-->
+    <div class="panel panel-success" style="margin-left: 60px;margin-right: 60px;">
+        <div class="panel-heading ">
+            <label for="title">标题：</label><input id="title" type="text" />
+            <label for="tag" style="margin-left: 20px">标签：</label><input id="tag" type="text" placeholder="请用 , 号分开"/>
+        </div>
+        <div class="panel-body">
+    <textarea id="TextArea1" cols="20" rows="2"  style="width: 100%;" class="ckeditor"
+    ng-model="TextArea1"></textarea>
+    <!--<button onclick="submitblog"> 提交</button>-->
+    <button id="submitBlog" class="btn btn-primary" style="width: 70px;right: 0;" ng-click="blogedit_submit()" >提交</button>
+
+        </div>
+    </div>
+</div>

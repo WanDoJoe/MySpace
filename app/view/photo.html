@@ -1,74 +1,154 @@
-
 <style>
-	.wrapper{
-		/*display: table;*/
-		  /*position:relative;*/
+	body {
+		margin: 0;
+		padding: 0;
 	}
 
-	.photo-body{
-		background:white;
-		padding-top: 40px;
-		padding-bottom: 40px;
-
-		display: flex;
-    	text-align: center;
+	.container {
+		width: 90%;
+		margin: 0 auto;
 	}
-	
-	.photo-content{
+	.header {
+		border-bottom: 1px solid #cccccc;
+		padding: 10px 0;
+		text-align: center;
+		height: 25px;
+		line-height: 25px;
+	}
+	.waterfall-list {
+		/*width: 1024px;*/
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		position: relative;
+	}
+	.waterfall-list li {
+		position: absolute;
+		left: 0;
+		top: 0;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		padding: 5px;
+		overflow: hidden;
 
+	}
+	.waterfall-list li:after {
+		clear: both;
+	}
+	.waterfall-list li .data-block {
+		border: 1px solid #cccccc;
+		border-radius: 5px;
+		padding: 5px;
+
+	}
+	.waterfall-list li p {
+		font-size: 12px;
+		color: rgba(61, 61, 61, 0.93);
+	}
+	.clear {
+		clear: both;
+	}
+	.waterfall-list li img {
+		width: 100%;
+		height: 100%;
+	}
+	.loadMore {
+		cursor: pointer;
+		width: 100%;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		border: 1px solid #cccccc;
+		border-radius: 5px;
 	}
 
 </style>
 
-<div ng-controller="photoController" class="wrapper">
-		<div class="photo-body"  id="viewer">
-			<div>
-				<img src="app/imgs/portfolio-3.jpg"
-					 data-original="app/imgs/portfolio-3.jpg" alt="图片1"
-					 class="img-rounded"
-					 style="width: 270px;height: 270px;margin-top: 5px">
 
-				<img src="app/imgs/portfolio-3.jpg"
-					 data-original="app/imgs/portfolio-3.jpg"
-					 style="width: 270px;height: 270px; margin-top: 5px"
-					 alt="图片2" class="img-rounded">
+<!--<div class="container">-->
+	<!--&lt;!&ndash;<h1 class="header">angular-waterfall</h1>&ndash;&gt;-->
 
-				<img src="app/imgs/portfolio-3.jpg"
-					 data-original="app/imgs/portfolio-3.jpg" alt="图片1"
-					 class="img-rounded"
-					 style="width: 270px;height: 270px;margin-top: 5px">
-				<img src="app/imgs/portfolio-3.jpg"
-					 data-original="app/imgs/portfolio-3.jpg" alt="图片1"
-					 class="img-rounded"
-					 style="width: 270px;height: 270px;margin-top: 5px">
-
-				<img src="app/imgs/portfolio-3.jpg"
-					 data-original="app/imgs/portfolio-3.jpg"
-					 style="width: 270px;height: 270px; margin-top: 5px"
-					 alt="图片2" class="img-rounded">
-
-				<img src="app/imgs/portfolio-3.jpg"
-					 data-original="app/imgs/portfolio-3.jpg" alt="图片1"
-					 class="img-rounded"
-					 style="width: 270px;height: 270px;margin-top: 5px">
-				<img src="app/imgs/portfolio-3.jpg"
-					 data-original="app/imgs/portfolio-3.jpg" alt="图片1"
-					 class="img-rounded"
-					 style="width: 270px;height: 270px;margin-top: 5px">
-
-				<img src="app/imgs/portfolio-3.jpg"
-					 data-original="app/imgs/portfolio-3.jpg"
-					 style="width: 270px;height: 270px; margin-top: 5px"
-					 alt="图片2" class="img-rounded">
-
-				<img src="app/imgs/portfolio-3.jpg"
-					 data-original="app/imgs/portfolio-3.jpg" alt="图片1"
-					 class="img-rounded"
-					 style="width: 270px;height: 270px;margin-top: 5px">
+	<!--<ul class="waterfall-list" ng-waterfall cols="6">-->
+		<!--<li ng-repeat="image in images" repeat-finished>-->
+			<!--<div class="data-block">-->
+				<!--<img src="{{image.url}}" alt="{{image.summary}}"/>-->
+				<!--<p>{{image.title}}</p>-->
+				<!--<p>{{image.summary}}</p>-->
+			<!--</div>-->
+		<!--</li>-->
+		<!--<div class="loadMore" ng-if="loadMore" ng-infinite-scroll ng-click="loadMoreData()">{{text}}</div>-->
+	<!--</ul>-->
+<!--</div>-->
 
 
-			</div>
 
-		</div>
 
-</div>
+
+
+
+
+
+
+
+
+<!--<style>-->
+	<!--*{-->
+		<!--margin: 0;-->
+		<!--padding: 0;-->
+	<!--}-->
+	<!--#wrapper{-->
+		<!--/*display: table;*/-->
+		  <!--/*position:relative;*/-->
+
+	<!-- -webkit-column-width: 202px;-->
+		<!-- -moz-column-width: 202px;-->
+		<!--column-width: 202px;-->
+		<!--padding-left: 20px;-->
+		<!--margin-right-right: 100px;-->
+	<!--}-->
+	<!--.box{-->
+
+		<!--/*padding:1px 1px 0 0;*/-->
+		<!--/*float: left;*/-->
+	<!--}-->
+	<!--.pic{-->
+		<!--/*border: 1px solid #5a5a5a;*/-->
+	<!--}-->
+	<!--.pic img{-->
+		<!--width: 365px;-->
+		<!--padding: 10px;-->
+	<!--}-->
+	<!--.photo-body{-->
+		<!--background:white;-->
+		<!--padding-top: 40px;-->
+		<!--padding-bottom: 40px;-->
+
+		<!--display: flex;-->
+    	<!--text-align: center;-->
+	<!--}-->
+	<!---->
+	<!--.photo-content{-->
+
+	<!--}-->
+
+<!--</style>-->
+
+<!--<div ng-controller="photoController" class="wrapper" id="wrapper">-->
+		<!--<div class="box"  id="viewer">-->
+			<!--<div  class="pic">-->
+				<!--&lt;!&ndash;<img src="app/imgs/portfolio-3.jpg"&ndash;&gt;-->
+					 <!--&lt;!&ndash;data-original="app/imgs/portfolio-3.jpg" alt="图片1"&ndash;&gt;-->
+					 <!--&lt;!&ndash;class="img-rounded"&ndash;&gt;-->
+					 <!--&lt;!&ndash;style="width: 270px;height: 270px;margin-top: 5px">&ndash;&gt;-->
+
+				<!--<img src="app/imgs/portfolio-3.jpg"-->
+				<!--data-original="app/imgs/portfolio-3.jpg" alt="图片1"-->
+				<!--class="img-rounded"-->
+				<!--&gt;-->
+		<!---->
+			<!--</div>-->
+
+		<!--</div>-->
+
+<!--</div>-->

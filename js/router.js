@@ -32,6 +32,10 @@ app.config(['$stateProvider', '$locationProvider', '$urlRouterProvider',
                 url:"/edit",
                 templateUrl:"app/view/blogeditor.html"//helpBase.baseUrl("home.html")
 			})
+            .state("blog.detail",{
+                url:"/detail",
+                templateUrl:"app/view/blogDetail.html"//helpBase.baseUrl("home.html")
+            })
 
 			//photo router
 			.state("app.photo",{
